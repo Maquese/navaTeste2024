@@ -28,21 +28,6 @@ namespace Application.UseCases
             if (rotaModel == null)
                 throw new ArgumentException("A rota deve ser cadastrada corretamente");
 
-            if (String.IsNullOrEmpty(rotaModel.Origem))
-                throw new ArgumentException("Origem deve ser preenchida");
-
-
-            if (String.IsNullOrEmpty(rotaModel.Destino))
-                throw new ArgumentException("Destino deve ser preenchida");
-
-
-            if (rotaModel.Valor == 0)
-                throw new ArgumentException("Valor deve ser maior que 0");
-
-
-            if (rotaModel.Origem == rotaModel.Destino)
-                throw new ArgumentOutOfRangeException("Origem e Destino n podem ser os mesmos");
-
             Rota rota = new Rota(rotaModel.Origem, rotaModel.Destino, rotaModel.Valor);
 
             await _rotaRepository.Add(rota);
@@ -83,21 +68,6 @@ namespace Application.UseCases
         {
             if (rotaModel == null)
                 throw new ArgumentException("A rota deve ser cadastrada corretamente");
-
-            if (String.IsNullOrEmpty(rotaModel.Origem))
-                throw new ArgumentException("Origem deve ser preenchida");
-
-
-            if (String.IsNullOrEmpty(rotaModel.Destino))
-                throw new ArgumentException("Destino deve ser preenchida");
-
-
-            if (rotaModel.Valor == 0)
-                throw new ArgumentException("Valor deve ser maior que 0");
-
-
-            if (rotaModel.Origem == rotaModel.Destino)
-                throw new ArgumentOutOfRangeException("Origem e Destino n podem ser os mesmos");
 
             var rota = await _rotaRepository.Read(rotaModel.Id);
             if (rota == null)

@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F9237856-78C0-49F0-B2B5-4CA0E80985E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOC", "IOC\IOC.csproj", "{D1263B0E-F1BA-454C-BDBF-2EB805A28962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOC", "IOC\IOC.csproj", "{D1263B0E-F1BA-454C-BDBF-2EB805A28962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossCutting", "CrossCutting\CrossCutting.csproj", "{45DF63B6-F75B-4C43-8B44-E8D2C1281319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrossCutting", "CrossCutting\CrossCutting.csproj", "{45DF63B6-F75B-4C43-8B44-E8D2C1281319}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Tests", "Domain.Tests\Domain.Tests.csproj", "{B393E95A-DBB4-41B9-A9DB-6CA47F47A041}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{45DF63B6-F75B-4C43-8B44-E8D2C1281319}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45DF63B6-F75B-4C43-8B44-E8D2C1281319}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45DF63B6-F75B-4C43-8B44-E8D2C1281319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B393E95A-DBB4-41B9-A9DB-6CA47F47A041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B393E95A-DBB4-41B9-A9DB-6CA47F47A041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B393E95A-DBB4-41B9-A9DB-6CA47F47A041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B393E95A-DBB4-41B9-A9DB-6CA47F47A041}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

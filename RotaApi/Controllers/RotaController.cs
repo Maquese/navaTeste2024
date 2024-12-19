@@ -92,6 +92,14 @@ namespace RotaApi.Controllers
             {
                 return Ok(await rotaService.CalcularRotaMaisBarata(origem, destino));
             }
+            catch(ArgumentOutOfRangeException)
+            {
+                return NoContent();
+            }
+            catch(KeyNotFoundException)
+            {
+                return NoContent();
+            }
             catch (Exception e)
             {
                 return BadRequest(e.Message);

@@ -56,6 +56,8 @@ namespace Domain.DijkstraAlgoritimo
 
         public static uint Calcular(List<Rota> rotas, string origin, string destination)
         {
+            origin = origin.Trim();
+            destination = destination.Trim();
             var nodes = new Dictionary<string, Node>();
             foreach (var rota in rotas)
             {
