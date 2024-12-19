@@ -1,0 +1,6 @@
+@RotaApi_HostAddress = http://localhost:5003
+
+GET {{RotaApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
